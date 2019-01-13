@@ -1,2 +1,2 @@
-# biosysid
-Python toolbox for system identification of biological systems. 
+# Bio-SysId : A Python toolbox for biomolecular system identification
+### Flexible parameter identification of biomolecular system models using data. 
