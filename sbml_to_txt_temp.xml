@@ -1,0 +1,21 @@
+<model>
+
+<reaction text="x+y--c1" after="--">
+    <delay type="none"/>
+    <propensity type="general" rate="_kc*x*y" />
+</reaction>
+
+<reaction text="c1--" after="--">
+    <delay type="none"/>
+    <propensity type="general" rate="_k1*c1" />
+</reaction>
+
+
+<species name="x" value="1.000000000000000000E+01" />
+<species name="y" value="1.000000000000000000E+02" />
+<species name="c1" value="0.000000000000000000E+00" />
+
+<parameter name="kc" value="1.096404569756930059E+01"/>
+<parameter name="k1" value="6.270364413937009607E-01"/>
+
+</model>
