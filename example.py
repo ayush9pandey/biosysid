@@ -68,7 +68,7 @@ priors = {'kc' : [1e-3, 1e3],'k1' : [1e-2, 1e5]}
 model.parameters = {'kc':6, 'k1':1}
 # model.species = ['c1']
 params = model.parameters
-fit_model, id_params = model.run_mcmc(params, priors, timepoints, nwalkers = 4* len(params), nsteps = 2, nsamples = 10, measurements = ['c1'], exp_data = data, plot_show = False)
+fit_model, id_params = model.run_mcmc(params, priors, timepoints, nwalkers = 4* len(params), nsteps = 200, nsamples = 100, measurements = ['c1'], exp_data = data, plot_show = False)
 # fit_model is biosysid model object with identified parameters substituted
 res_orig, m_orig = model.simulate_bioscrape(timepoints, 'stochastic')
 res, m = fit_model.simulate_bioscrape(timepoints, 'stochastic')

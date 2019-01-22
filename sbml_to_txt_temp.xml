@@ -15,7 +15,7 @@
 <species name="y" value="1.000000000000000000E+02" />
 <species name="c1" value="0.000000000000000000E+00" />
 
-<parameter name="kc" value="1.096404569756930059E+01"/>
-<parameter name="k1" value="6.270364413937009607E-01"/>
+<parameter name="kc" value="6.000000000000000000E+00"/>
+<parameter name="k1" value="1.000000000000000000E+00"/>
 
 </model>

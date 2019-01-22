@@ -73,6 +73,11 @@ class Model(object):
                 for j in range(nsamples):
                     d1 = results[:,i,j]
                     diff = np.abs(d1 - exp_data.get_values()) 
+                    '''
+                    TODO : Experimental data having multiple output case is important to implement here. 
+                    We can already handle multiple measurements. Right now what we are doing is WRONG (for multiple outputs case), because we are 
+                    subtracting the same experimental data from different output responses. 
+                    '''
                     if cost == 'inf':
                         infinity_error = np.max(diff)
                         total_error += infinity_error**2
@@ -80,6 +85,7 @@ class Model(object):
                         L2_norm_error = diff**2
                         L2_norm_error = np.linalg.norm(diff)
                         total_error += L2_norm_error
+            print(total_error)
             return -total_error*penalty
         
         # Run emcee

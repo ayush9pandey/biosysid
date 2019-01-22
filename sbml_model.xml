@@ -27,8 +27,8 @@
       <species id="c1" name="c1" compartment="cell" initialConcentration="0" substanceUnits="count" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
-      <parameter id="kc" name="kc" value="10.9640456975693" units="per_second" constant="true"/>
-      <parameter id="k1" name="k1" value="0.627036441393701" units="per_second" constant="true"/>
+      <parameter id="kc" name="kc" value="4.65822018673031" units="per_second" constant="true"/>
+      <parameter id="k1" name="k1" value="1.05218154414273" units="per_second" constant="true"/>
     </listOfParameters>
     <listOfReactions>
       <reaction id="r1" name="r1" reversible="false">
